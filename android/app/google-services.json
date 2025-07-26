@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "491462549728",
+    "project_id": "bagyotrackr-66ad2",
+    "storage_bucket": "bagyotrackr-66ad2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491462549728:android:4d0674e71b8c06a680b085",
+        "android_client_info": {
+          "package_name": "com.example.bagyotrackr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsGnJGil57lSrXTnECTYF8QvQxiiwZCpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
