@@ -17,6 +17,21 @@ class _AlertScreenState extends State<AlertScreen> {
 
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ..setNavigationDelegate(
+        NavigationDelegate(
+          onPageFinished: (String url) {
+            // Inject JavaScript to hide popup elements
+            _controller.runJavaScript('''
+              (function() {
+                const banner = document.querySelector('div[class*="banner"], .app-promo, .header-download');
+                if (banner) {
+                  banner.style.display = "none";
+                }
+              })();
+            ''');
+          },
+        ),
+      )
       ..loadRequest(Uri.parse('https://zoom.earth'));
   }
 
